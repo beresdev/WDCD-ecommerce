@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import { HeaderNav } from './components/componentName/header-nav/HeaderNav';
+import { Search } from './components/componentSearch/Search';
+import { ProductCard } from './components/ProductCard/ProductCard';
+import {ConteinerComponent} from './components/componentConteiner/ConteinerComponent'
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -11,12 +14,22 @@ function App() {
     .then(data => setProducts(data.products))
   }, [])
 
-  console.log(products);
-
   return (
     <>
-    {/* <h1>¡Hola mundo!</h1> */}
     <HeaderNav/>
+    <Search/>
+    <ConteinerComponent>
+    {
+      products.map(product => (
+        <ProductCard 
+          key={product.id}
+          title={product.title}
+          img={product.images[0]}
+          price={product.price}
+        />
+      ))
+    }
+    </ConteinerComponent>
     </>
   )
 
