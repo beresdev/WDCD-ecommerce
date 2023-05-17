@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import { HeaderNav } from './components/componentName/header-nav/HeaderNav';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -14,9 +15,11 @@ function App() {
 
   return (
     <>
-    <h1>¡Hola mundo!</h1>
+    {/* <h1>¡Hola mundo!</h1> */}
+    <HeaderNav/>
     </>
   )
+
 }
 
 export default App
