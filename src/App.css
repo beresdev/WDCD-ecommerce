@@ -1,9 +1,16 @@
-/* :root {
-
-} */
+:root {
+  --white-main: #F6F1F1;
+  --blue-dark: #120136;
+  --blue-semi-dark: #035AA6;
+  --blue-light: #40BAD5;
+  --orange-light: #FC961E;
+  --yellow-light: #FCBF1E;
+  --main-font:'Roboto', sans-serif;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--main-font)
 }
