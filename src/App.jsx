@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import {ConteinerComponent} from './components/componentConteiner/ConteinerComponent'
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
     <h1>¡Hola mundo!</h1>
+    <ConteinerComponent></ConteinerComponent>
     </>
   )
 }
