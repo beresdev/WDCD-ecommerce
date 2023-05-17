@@ -1,0 +1,44 @@
+
+header {
+    background: var(--blue-dark);
+    color: #F6F1F1;
+    height: 100px;
+  }
+
+div #logo, #buscador, #ulLogo{
+    width: 33%;
+}
+  #logo {
+    font-weight: 700;
+  }
+
+  #imgLogo{
+    height: 50px;
+    margin:  1rem;
+  }
+  
+  .icons{
+    height: 25px;
+    margin: 0 1rem;
+  }
+
+  #header-blue-dark{
+    display: flex;
+  }
+  #header-blue-dark li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  #header-nav-blue-semi-dark{
+    background: var(--blue-semi-dark);
+    display: flex;
+  }
+  
+  #header-nav-blue-semi-dark #Promo{
+    color: var(--orange-light);
+    font-weight: 700;
+  }
+
+

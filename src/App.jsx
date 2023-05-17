@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import { Search } from './components/ComponentSearch/Search';
+import { HeaderNav } from './components/componentName/header-nav/HeaderNav';
 import { ProductCard } from './components/ProductCard/ProductCard';
 import {ConteinerComponent} from './components/componentConteiner/ConteinerComponent'
-
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+    <HeaderNav/>
     <Search/>
     <ConteinerComponent>
     {
@@ -29,9 +30,9 @@ function App() {
       ))
     }
     </ConteinerComponent>
-
     </>
   )
+
 }
 
 export default App
