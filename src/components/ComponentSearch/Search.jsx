@@ -1,13 +1,8 @@
 
-
 function Search(){
-
-
-
-return (
-    <input className="search" placeholder="Search products">
-    </input>
-)
-
+    return (
+        <input className="search" placeholder="Search products" />
+    )
 }
+
 export {Search}

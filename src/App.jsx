@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import { Search } from './components/componentSearch/Search';
+import { Search } from './components/ComponentSearch/Search';
 import { ProductCard } from './components/ProductCard/ProductCard';
 import {ConteinerComponent} from './components/componentConteiner/ConteinerComponent'
 
