@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import { Search } from './components/componentSearch/Search';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
     <h1>¡Hola mundo!</h1>
+    <Search/>
     </>
   )
 }
