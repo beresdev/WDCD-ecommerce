@@ -1,38 +1,11 @@
 import './ConteinerComponent.css'
 
-function ConteinerComponent () {
+function ConteinerComponent ({children}) {
 
     return (
-
         <main>
-
             <section className='Container-Cards'>
-
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                <div>Product</div>
-                
+                {children}
             </section>
         </main>
     )
