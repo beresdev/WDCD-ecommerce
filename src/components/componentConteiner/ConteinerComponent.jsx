@@ -5,7 +5,7 @@ function ConteinerComponent ({children}) {
     return (
         <main>
             <section className='Container-Cards'>
-                <div>{children}</div>
+                {children}
             </section>
         </main>
     )

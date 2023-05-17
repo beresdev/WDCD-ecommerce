@@ -14,7 +14,6 @@ function App() {
 
   return (
     <>
-    <h1>¡Hola mundo!</h1>
     <ConteinerComponent>
     {
       products.map(product => (
