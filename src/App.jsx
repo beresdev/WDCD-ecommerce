@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import { Search } from './components/componentSearch/Search';
 import { ProductCard } from './components/ProductCard/ProductCard';
 import {ConteinerComponent} from './components/componentConteiner/ConteinerComponent'
+
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -14,6 +16,7 @@ function App() {
 
   return (
     <>
+    <Search/>
     <ConteinerComponent>
     {
       products.map(product => (
@@ -26,6 +29,7 @@ function App() {
       ))
     }
     </ConteinerComponent>
+
     </>
   )
 }
